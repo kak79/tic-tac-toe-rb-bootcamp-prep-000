@@ -123,9 +123,9 @@ def play(board)
   winning_array = won?(board)
   until over?(board)
     if current_player(board) == "X"
-      if turn(board)
+      turn(board)
     elsif current_player(board) == "O"
-      if turn(board)
+      turn(board)
       
     end
   end
