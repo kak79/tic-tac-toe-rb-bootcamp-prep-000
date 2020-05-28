@@ -88,7 +88,6 @@ def winner(board)
     if winning_array
       board.at(winning_array[0])   
     end
-  return nil
 end
 
 def play(board)
