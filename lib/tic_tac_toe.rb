@@ -129,7 +129,7 @@ def play(board)
     
   end
   if won?(board)
-    puts "Congrationlations #{board.at(winning_array[0])}!"
+    puts "Congrationlations !"
   elsif draw?(board)
     puts "The game was a draw."
   end
