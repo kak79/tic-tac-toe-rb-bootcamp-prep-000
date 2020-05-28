@@ -126,7 +126,7 @@ def play(board)
       if turn(board)
     elsif current_player(board) == "O"
       if turn(board)
-      end
+      
     end
   end
   if won?(board)
