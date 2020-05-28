@@ -122,16 +122,12 @@ end
 def play(board)
   winning_array = won?(board)
   until over?(board)
-    
       turn(board)
-    
-      
-    
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
   elsif draw?(board)
-    puts "The game was a draw."
+    puts "Cat's Game!"
   end
 end
 
