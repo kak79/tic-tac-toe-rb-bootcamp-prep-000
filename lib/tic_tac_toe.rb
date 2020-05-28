@@ -70,8 +70,8 @@ def won?(board)
 end
 
 def full?(board)
-  board.each_index.all? do |index|
-    position_taken?(board, index)
+  board.all? do |token|
+    token == "X" || 
   end 
 end
 
