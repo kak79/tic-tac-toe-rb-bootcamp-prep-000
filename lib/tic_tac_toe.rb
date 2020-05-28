@@ -48,13 +48,9 @@ def turn(board)
 end
 
 def turn_count(board)
-  count = 0
-  board.each do |board_element|
-    if board_element == "X" || board_element == "O"
-      count += 1
-    end
+  board.count do |board_element|
+    board_element == "X" || board_element == "O"
   end
-  return count
 end 
 
 def current_player(board)
