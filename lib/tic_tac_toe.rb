@@ -122,11 +122,11 @@ end
 def play(board)
   winning_array = won?(board)
   until over?(board)
-    if current_player(board) == "X"
+    
       turn(board)
-    elsif current_player(board) == "O"
-      turn(board)
-    end
+    
+      
+    
   end
   if won?(board)
     puts "Congrationlations #{board.at(winning_array[0])}!"
