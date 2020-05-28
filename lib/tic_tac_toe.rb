@@ -33,25 +33,16 @@ end
 
 def position_taken?(board,index)
   board[index] == "X" || board[index] == "O"
-  #board[index] != " " || board[index] != "" ||  board[index] != nil
-  #   return false
-  # elsif board[index] == "X" || board[index] == "O"
-  #   return true
-  # else  board[index] == nil
-  #   return false
-  # end
 end
 
 def turn(board)
   puts "Please enter 1-9:"
-  input = gets.chomp
+  input = gets.strip
   index = input_to_index(input)
-    
-    if valid_move?(board,index) 
+     if valid_move?(board,index) 
       move(board, index, current_player(board))
       display_board(board)
-      
-    else 
+     else 
       turn(board)
   end
 end
