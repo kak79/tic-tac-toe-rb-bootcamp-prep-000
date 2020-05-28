@@ -47,14 +47,6 @@ def turn(board)
   end
 end
 
-def play(board)
-  count=0
-  while count < 9
-    turn(board)
-    count += 1
-  end
-end  
-
 def turn_count(board)
   count = 0
   board.each do |board_element|
